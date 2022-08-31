@@ -41,20 +41,20 @@ The command removes all the Kubernetes components associated with the chart and 
 | `pdns.api.key`             | PowerDNS API key | `PowerDNSAPI`
 | `pdns.webserver.allowFrom` | PowerDNS webserver allowed IP whitelist |  `0.0.0.0/0`
 | `pdns.dnsupdate.enabled`   | Should DNS UPDATE support be enabled | `no` |
-| `replicaCount`                 | Number of pdns nodes | `1` |
-| `image.repository`         | Image repository | `psitrax/powerdns` |
-| `image.tag`                | Image tag. | `4.1.2`|
-| `image.pullPolicy`         | Image pull policy | `IfNotPresent` |
-| `service.type`             | Kubernetes service type | `ClusterIP` |
-| `ingress.enabled`          | Enables Ingress | `false` |
-| `ingress.annotations`      | Ingress annotations | `{}` |
-| `ingress.path`           | Custom path                       | `/`
-| `ingress.hosts`            | Ingress accepted hostnames | `chart-example.local` |
-| `ingress.tls`              | Ingress TLS configuration | `[]` |
-| `resources`                | CPU/Memory resource limits/requests | `{}` |
-| `nodeSelector`             | Node labels for pod assignment | `{}` |
-| `tolerations`              | Toleration labels for pod assignment | `[]` |
-| `affinity`                 | Affinity settings for pod assignment | `{}` |
+| `pdns.replicaCount`                 | Number of pdns nodes | `1` |
+| `pdns.image.repository`         | Image repository | `psitrax/powerdns` |
+| `pdns.image.tag`                | Image tag. | `4.1.2`|
+| `pdns.image.pullPolicy`         | Image pull policy | `IfNotPresent` |
+| `pdns.service.type`             | Kubernetes service type | `ClusterIP` |
+| `pdns.ingress.enabled`          | Enables Ingress | `false` |
+| `pdns.ingress.annotations`      | Ingress annotations | `{}` |
+| `pdns.ingress.path`           | Custom path                       | `/`
+| `pdns.ingress.hosts`            | Ingress accepted hostnames | `chart-example.local` |
+| `pdns.ingress.tls`              | Ingress TLS configuration | `[]` |
+| `pdns.resources`                | CPU/Memory resource limits/requests | `{}` |
+| `pdns.nodeSelector`             | Node labels for pod assignment | `{}` |
+| `pdns.tolerations`              | Toleration labels for pod assignment | `[]` |
+| `pdns.affinity`                 | Affinity settings for pod assignment | `{}` |
 | `mariadb.enabled`                    | Deploy MariaDB container(s)                | `true`     |
 | `mariadb.mariadbRootPassword`        | MariaDB admin password                     | `nil`      |
 | `mariadb.mariadbDatabase`            | Database name to create                    | `powerdns` |
